@@ -1,9 +1,9 @@
 const cloudinary = require('cloudinary')
 
 
-CLOUDINARY_CLOUD_NAME="dieknmxd6"
-CLOUDINARY_API_KEY=251919774281278;
-CLOUDINARY_API_SECRET="SfgQNqPqxs8lweoWZyR96O7kPJg"
+// CLOUDINARY_CLOUD_NAME="dieknmxd6"
+// CLOUDINARY_API_KEY=251919774281278;
+// CLOUDINARY_API_SECRET="SfgQNqPqxs8lweoWZyR96O7kPJg"
 
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -19,7 +19,7 @@ exports.upload = async (req, res) =>{
     res.json({
         public_id: result.public_id,
         url: result.secure_url,
-
+s
     })
 }
 
