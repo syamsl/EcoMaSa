@@ -47,7 +47,7 @@ const AdminDashboard = () => {
 		getTotalRevenue(user.token)
 			.then(res => {
 				// console.log(res)
-				setRevenue(res.data[0].totalPrice / 100)
+				setRevenue(res.data[0].totalPrice)
 			})
 			.catch((err) => console.log(err))
 
